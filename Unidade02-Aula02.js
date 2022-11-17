@@ -10,7 +10,7 @@ const cliente = {
 };
 console.log(cliente);
 
-cliente.fones = ["5511969835986", "5521985591085"];
+cliente.fones = ["5511969835986", "5521985591085", "5511969835986", "5521985591085", "5511969835986", "5521985591085"];
 console.log(cliente);
 
 cliente.fones.forEach(fone => console.log(fone));

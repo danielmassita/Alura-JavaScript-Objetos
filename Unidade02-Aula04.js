@@ -2,6 +2,37 @@
 
 // DESAFIO - Desafio - Listas de Dependentes - Verificar a melhor forma d agregar a informação de um novo dependente ao objeto Cliente.
 
+const cliente = {
+    nome:"André",
+    idade:36,
+    cpf:"12312312312",
+    email:"andre@email.com",
+    fones:["5511969835986", "5521985591085"],
+    dependentes:[{
+        nome:"Sara Silva",
+        parentesco:"filha",
+        dataNasc:"20/03/2011",
+    }]
+};
+console.log(cliente);
+
+// Para agregar, vamos usar uma array pro mesmo objeto, com mesmas chaves de filtro.
+cliente.dependentes.push({
+    nome:"Sâmia Maria",
+    parentesco: "filha",
+    dataNasc:"04/01/2014"
+})
+console.log(cliente);
+
+const filhaMaisNova = cliente.dependentes.filter(dependente => dependente.dataNasc==="04/01/2014");
+
+console.log(filhaMaisNova); // vai retornar a [array com o {objeto inteiro}]...
+console.log(filhaMaisNova[0].nome); // vai retornar o item com o "nome:" do objeto inteiro, mas apenas o valor atribuído...
+console.log(`A dependente mais nova(o) é a(o): ${filhaMaisNova[0].nome}.`)
+
+
+// Trabalhando com métodos de array, podemos usar o .push() pra adicionar dados e valores, na forma de objeto. Sendo uma array, usamos o método .filter() pra filtrar os resultados true para a condição (no caso, dataNasc="04/01/2014"), e o resultado será exibido ao ser chamado console.log(variável[0].nome) como sendo o dado "Sâmia Maria". Se exibisse a variável inteira, iria aparecer todas as chaves e valores do objeto inteiro.
+
 /*
 04
 Listas de objetos
