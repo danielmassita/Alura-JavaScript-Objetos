@@ -2,7 +2,8 @@
 
 // Desafio - Adicionando Campos - Adicionar informações importantes que ainda estão faltando, como telefone e também seus valores
 
-
+var teste = 'Hello, world!';
+console.log(teste);
 
 
 
