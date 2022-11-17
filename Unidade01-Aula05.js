@@ -9,6 +9,30 @@ const cliente = {
     email:"andre@email.com",
 };
 
+//               [0]       [1]     [2]      [3]
+const chaves = ["nome", "idade", "cpf", "email"];
+const chave = "nome";
+
+console.log(cliente[chaves[0]]); // acessar via NOTAÇÃO DE COLCHETES, usamos a array como lista de CHAVES e buscamos no OBJETO os valores respectivos de cada chave...
+console.log(" ");
+
+console.log(cliente[chaves[0]]);
+console.log(cliente[chaves[1]]);
+console.log(cliente[chaves[2]]);
+console.log(cliente[chaves[3]]);
+console.log(" ");
+
+console.log(cliente.chave); // será undefined, já que no OBJETO cliente não existe (ainda) o .chave para acessar algum eventual dado (undefined)...
+console.log(" ");
+
+chaves.forEach(info => console.log(cliente[info]));
+// O método .forEach é um métodod e array, precisa de uma função callback pra rodar, então info é o parâmetro, e pra cada chave que tem dentro da array "chaves", o JS percorreu pra cada item e rodou o console.log na posição [info]...
+
+console.log(" ");
+console.log(cliente["nome"]); // ao invés do índice, podemos usar literalmente a chave "nome" se soubermos o filtro pra buscar...
+console.log(cliente["sexo"]); // se a chave não existe, ela retorna undefined no JS...
+
+
 
 /*
 05
