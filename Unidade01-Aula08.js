@@ -31,12 +31,4 @@ Alternativa Errada. Desta maneira, apesar de não acusar nenhum erro, pessoa.cpf
 
 D - Para adicionar os campos de seguro social e cpf, deve-se utilizar a notação de colchetes como pessoa[cpf]="15346626522-65". Para exibir os 4 primeiros dígitos da identidade e CPF, podemos chamar uma função de string chamada substring() e passar início e o fim da string que queremos na forma pessoa[cpf].substring(0,4).
 Alternativa Errada. Escrevendo pessoa[cpf]="15346626522-65" acontecerá um erro de referência (ReferenceError: cpf is not defined). pois estaríamos tentando acessar uma posição no array pessoa de chave cpf. E pelo mesmo motivo a sentença pessoa[cpf].substring(0,4) da substring() não funcionaria.
-
-09
-Faça como eu fiz: Criando objetos
-PRÓXIMA ATIVIDADE
-
-Nesta aula, começamos a aprender sobre a estrutura de dados chamada de objetos no Javascript, muito importante em linguagens de programação modernas. Estudamos como criar um objeto, adicionar propriedades e alterar seus valores. Agora é com você! Crie um objeto Peter Parker no Javascript de acordo com o que fizemos no vídeo.
-
-
 */
