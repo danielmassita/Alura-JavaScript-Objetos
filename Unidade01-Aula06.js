@@ -2,10 +2,19 @@
 
 // Desafio - Adicionando Campos - Adicionar informações importantes que ainda estão faltando, como telefone e também seus valores
 
-var teste = 'Hello, world!';
-console.log(teste);
+const cliente = {
+    nome:"André",
+    idade:36,
+    cpf:"12312312312",
+    email:"andre@email.com",
+};
+console.log(cliente);
 
+cliente.fone = "11969835986"; // podemos atribuir um novo valor pra uma nova chave...
+console.log(cliente);
 
+cliente.fone = "21985591085"; // ou podemos alterar o valor de uma chave existente...
+console.log(cliente);
 
 /*
 Transcrição
